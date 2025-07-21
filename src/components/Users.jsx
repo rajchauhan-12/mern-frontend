@@ -137,7 +137,7 @@ export default function Users() {
     });
   };
   return (
-    <div>
+    <div className="container">
       <h2>User Management</h2>
       {error}
       <div>

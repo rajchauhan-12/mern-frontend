@@ -44,7 +44,7 @@ export default function Profile() {
     }
   };
   return (
-    <div>
+    <div className="container">
       <h3>My Profile</h3>
       <button onClick={logout}>Logout</button>
       <p>

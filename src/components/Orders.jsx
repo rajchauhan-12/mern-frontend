@@ -41,7 +41,7 @@ export default function Orders() {
     }
   };
   return (
-    <div>
+    <div className="container">
       <h2>Order Management</h2>
       <div>
         <select onChange={(e) => setStatus(e.target.value)}>

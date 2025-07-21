@@ -28,7 +28,8 @@ export default function Product() {
     }
   };
   return (
-    <div>
+   <div className="container">
+    <div className="flex">
       {products &&
         products.map((product) => (
           <div key={product._id}>
@@ -39,6 +40,7 @@ export default function Product() {
             <button onClick={() => addToCart(product)}>Add to Cart</button>
           </div>
         ))}
+    </div>
     </div>
   );
 }

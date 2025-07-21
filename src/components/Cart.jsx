@@ -50,7 +50,7 @@ export default function Cart() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2>My Cart</h2>
       {error}
       {cart &&

@@ -115,7 +115,7 @@ export default function Products() {
     });
   };
   return (
-    <div>
+    <div className="container">
       <h2>Product Management</h2>
       {error}
       <div>
