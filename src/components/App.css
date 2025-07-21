@@ -64,7 +64,7 @@ button:hover {
 
 /* ================= FULLSCREEN HERO BACKGROUND ================= */
 .fullscreen-bg {
-  background-image: url('/images/bg.jpg'); /* your background image path */
+  background-image: url('/images/bg.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -215,4 +215,58 @@ footer {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+
+
+/* Default transparent navbar for home with image background */
+.navbar-transparent {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+/* Solid white navbar for login/register */
+.navbar-light {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #c97b45;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo color options */
+.logo.light {
+  color: white;
+}
+
+.logo.dark {
+  color: #c97b45;
+}
+
+/* Keep nav links styled nicely */
+.nav-links a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #a3562f;
 }

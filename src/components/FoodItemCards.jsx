@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { AppContext } from "../App";
 // import "./FoodSection.css";
 
 const foodItems = [
@@ -26,6 +28,20 @@ const foodItems = [
 ];
 
 export default function FoodSection() {
+  const { user } = useContext(AppContext);
+  const navigate = useNavigate();
+
+  const addToCart = (item) => {
+    if (!user?.token) {
+      alert("Please login to add your order");
+      navigate("/login");
+      return;
+    }
+
+    // TODO: Add cart logic here
+    alert(`${item.name} added to cart`);
+  };
+
   return (
     <section className="food-section">
       <h2 className="food-title">Our Popular Dishes</h2>
@@ -36,7 +52,7 @@ export default function FoodSection() {
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p className="price">₹{item.price}</p>
-            <button>Add to Cart</button>
+            <button onClick={() => addToCart(item)}>Add to Cart</button>
           </div>
         ))}
       </div>
