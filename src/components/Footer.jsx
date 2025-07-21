@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Footer() {
-  return (
-    // <div> <h3>This is footer</h3></div>
-    <div className="footer">This is footer</div>
-
-  )
+  return <footer>© 2025 Cafe App. All rights reserved.</footer>;
 }

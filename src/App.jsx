@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import Register from "./components/Register";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
+import Home from "./components/Home";
 import Order from "./components/Order";
 import Admin from "./components/Admin";
 import Users from "./components/Users";
@@ -24,9 +25,11 @@ function App() {
       <AppContext.Provider value={{ cart, setCart, user, setUser }}>
         <BrowserRouter>
           <Header />
+          <Home/>
           <Routes>
             <Route index element={<Product />} />
             <Route path="login" element={<Login />} />
+            {/* <Route path="Home" element={<Home/>} /> */}
              <Route path="profile" element={<Profile />} />
             <Route path="register" element={<Register />} />
             <Route path="cart" element={<Cart />} />
