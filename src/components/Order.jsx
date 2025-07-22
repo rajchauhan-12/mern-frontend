@@ -23,7 +23,7 @@ export default function Order() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h3>My Orders</h3>
       {orders &&
         orders.map((order) => (

@@ -270,3 +270,7 @@ footer {
 .nav-links a:hover {
   color: #a3562f;
 }
+
+.container{
+  padding: 100px;
+}
