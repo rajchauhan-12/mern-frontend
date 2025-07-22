@@ -8,7 +8,7 @@ const foodItems = [
     id: 1,
     name: "Margherita Pizza",
     description: "Classic cheese pizza with basil.",
-    price: 299,
+    price: 400,
     image: "/images/pizza.jpg",
   },
   {

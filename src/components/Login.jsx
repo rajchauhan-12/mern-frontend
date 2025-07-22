@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { AppContext } from "../App";
-import "./Login.css"; // 🔄 Import the CSS here
+import "./Login.css"; 
 
 export default function Login() {
   const { user, setUser } = useContext(AppContext);
